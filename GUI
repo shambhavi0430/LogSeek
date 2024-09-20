@@ -1,0 +1,16 @@
+# Create an instance of tkinter frame or window
+window=Tk()
+# Set the size of the tkinter window
+window.geometry("700x350")
+window.title("PythonGeeks")#give title to the window
+head=Label(window, text="Let's perform Binary Search", font=('Calibri 15'))# a label
+head.pack(pady=20)
+Label(window, text="Enter number you want to search", font=('Calibri')).pack()# a label
+
+Entry(window,textvariable=e).pack()
+Entry(window,textvariable=n).place(x=280,y=110)#enter a number here
+#create a button
+Button(window, text="Search", command=binary_search).place(x=320,y=160)
+
+n=tk.IntVar()
+window.mainloop()#main command
